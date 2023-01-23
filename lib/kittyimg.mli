@@ -1,3 +1,8 @@
+(** An OCaml implementation for the client-side terminal graphics protocol of
+    the Kitty terminal emulator. See {{:
+    https://sw.kovidgoyal.net/kitty/graphics-protocol/} the protocol
+    specification} for more information. *)
+
 val string_of_bytes_ba :
   (int, Bigarray.int8_unsigned_elt, Bigarray.c_layout) Bigarray.Array1.t ->
   string

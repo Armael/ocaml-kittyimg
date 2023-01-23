@@ -1,0 +1,3 @@
+(executable
+ (name icat)
+ (libraries kittyimg stb_image))

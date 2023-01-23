@@ -1,4 +1,0 @@
-(executable
- (public_name kittyimg)
- (name main)
- (libraries kittyimg cairo2))

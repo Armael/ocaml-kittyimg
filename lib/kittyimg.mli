@@ -1,4 +1,6 @@
-val string_of_stb_image : Stb_image.int8 Stb_image.t -> string
+val string_of_bytes_ba :
+  (int, Bigarray.int8_unsigned_elt, Bigarray.c_layout) Bigarray.Array1.t ->
+  string
 
 type pixel_format =
   [ `RGB (* 24 bits RGB *)

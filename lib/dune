@@ -1,4 +1,4 @@
 (library
- (libraries base64 stb_image)
+ (libraries base64)
  (name kittyimg)
  (public_name kittyimg))

@@ -1,9 +1,8 @@
-let string_of_stb_image img =
-  let module I = Stb_image in
-  let nbytes = Bigarray.Array1.size_in_bytes (I.data img) in
+let string_of_bytes_ba ba =
+  let nbytes = Bigarray.Array1.size_in_bytes ba in
   let buf = Bytes.create nbytes in
   for i = 0 to nbytes - 1 do
-    Bytes.set_uint8 buf i (I.data img).{i}
+    Bytes.set_uint8 buf i ba.{i}
   done;
   Bytes.unsafe_to_string buf
 

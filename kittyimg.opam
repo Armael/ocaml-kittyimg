@@ -28,4 +28,5 @@ build: [
     "@doc" {with-doc}
   ]
 ]
+available: arch != "arm32" & arch != "x86_32"
 dev-repo: "git+https://github.com/Armael/ocaml-kittyimg.git"

@@ -1,5 +1,5 @@
 (lang dune 2.7)
-(generate_opam_files true)
+(generate_opam_files false)
 
 (name kittyimg)
 (version 0.1)
